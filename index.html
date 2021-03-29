@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Daily Scheduler</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="jumbotron">
+      <h1 class="display-3">Daily planner</h1>
+      <p class="lead">Plan out your Day!</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <!-- day element -->
+    <div class="backgound-container">
+      <div class="container">
+        <div class="curDay"></div>
+        <!-- container of paired row and button elements -->
+        <div class="flex-container">
+          <div class="col mt-2 custom-row">
+  
+            <button type="button" id="09" class="saveBtn fa fa-lock"></button>
+            <textarea placeholder="Type here..." class="row" name="09" id="row-9"></textarea>
+              
+            <button type="button" id="10" class="saveBtn fa fa-lock"></button>
+            <textarea placeholder="Type here..." class="row" name="10" id="row-10"></textarea>
+                      
+            <button type="button" id="11" class="saveBtn fa fa-lock"></button>
+            <textarea placeholder="Type here..." class="row" name="11" id="row-11"></textarea>
+              
+            <button type="button" id="12" class="saveBtn fa fa-lock"></button>
+            <textarea placeholder="Type here..." class="row" name="12" id="row-12"></textarea>       
+            
+            <button type="button" id="13" class="saveBtn fa fa-lock"></button>
+            <textarea placeholder="Type here..." class="row" name="13" id="row-13"></textarea>
+  
+            <button type="button" id="14" class="saveBtn fa fa-lock"></button>
+            <textarea placeholder="Type here..." class="row" name="14" id="row-14"></textarea>    
+            
+            <button type="button" id="15" class="saveBtn fa fa-lock"></button>
+            <textarea placeholder="Type here..." class="row" name="15" id="row-15"></textarea> 
+            
+            <button type="button" id="16" class="saveBtn fa fa-lock"></button>
+            <textarea placeholder="Type here..." class="row" name="16" id="row-16"></textarea>    
+            
+            <button type="button" id="17" class="saveBtn fa fa-lock"></button>
+            <textarea placeholder="Type here..." class="row" name="17" id="row-17"></textarea>  
+            
+            <button type="button" id="18" class="saveBtn fa fa-lock"></button>
+            <textarea placeholder="Type here..." class="row" name="18" id="row-18"></textarea>           
+            <!-- time of day row aside -->
+            <aside class="timeOfDay">
+              <div class="hour" id="hour-9">9am</div>
+              <div class="hour" id="hour-10">10am</div>
+              <div class="hour" id="hour-11">11am</div>
+              <div class="hour" id="hour-12">12pm</div>
+              <div class="hour" id="hour-13">1pm</div>
+              <div class="hour" id="hour-14">2pm</div>
+              <div class="hour" id="hour-15">3pm</div>
+              <div class="hour" id="hour-16">4pm</div>
+              <div class="hour" id="hour-17">5pm</div>
+              <div class="hour" id="hour-18">6pm</div>
+              
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
 </html>
