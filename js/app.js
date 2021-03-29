@@ -91,7 +91,6 @@ $('#09').click(function(e) {
   });
   
  
-  // gets local storage on load 
  onload = function() {
     const getText1 = localStorage.getItem('first', input1.val());
     input1.text(getText1);
